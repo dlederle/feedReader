@@ -10,18 +10,20 @@ $(function() {
     template: _.template( $("#item-template").html() ), 
 
     events: {
-
+    /*
+      'click .expand':    'expand',
+      'hover .story':     'show'
+      */
     },
 
     initialize: function() {
-      this.model.on('change', this.render, this);
+      this.model.on('render', this.render, this);
       this.model.on('destroy', this.remove, this);
-      //this.model.on('visible', this.toggleVisible, this);
-
     },
 
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
+      this.$el.addClass('content currStory');
       return this;
     }, 
 

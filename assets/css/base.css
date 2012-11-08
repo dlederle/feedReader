@@ -1,0 +1,34 @@
+body {
+  background-color: #D9CEB2;
+}
+
+#header {
+  padding-top: 8px;
+}
+
+.title {
+  text-align: center;
+}
+
+#feeds-container {
+  background-color: #99B2B7;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#main {
+  background-color: #D5DED9;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.content {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.highlighted {
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #E9CC5A;
+}
