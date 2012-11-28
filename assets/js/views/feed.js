@@ -10,10 +10,8 @@ $(function() {
     template: _.template( $("#item-template").html() ), 
 
     events: {
-    /*
-      'click .expand':    'expand',
-      'hover .story':     'show'
-      */
+      'click .remove':    'clear',
+      'click .refresh':   'refresh'
     },
 
     initialize: function() {
@@ -27,8 +25,13 @@ $(function() {
       return this;
     }, 
 
+    refresh: function() {
+      this.model.initialize();
+    },
+
     clear: function() {
       this.model.destroy();
+      $('#main').append('<div class="content currStory">');
     }
   });
 });

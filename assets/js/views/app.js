@@ -23,7 +23,6 @@ $(function($) {
 
     addFeed: function(e) {
       var tmp = app.Feeds.create({url: this.input.val().trim()});
-      tmp.populate();
     },
 
     renderFeed: function(options) {

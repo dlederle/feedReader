@@ -43,6 +43,8 @@
     <% if(logo) { %>
       <img src='<%- logo.url %>' alt='<%- logo.title %>' />
     <% } %>
+  <button class='remove'>Remove</button>
+  <button class='refresh'>Refresh</button>
     <% _.each(stories, function(story) {  %>
       <div class="story">
         <a href='<%- unescape(story.link) %>'><h4> <%- unescape(story.title) %> </h4></a>

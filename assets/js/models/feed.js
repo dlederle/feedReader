@@ -21,6 +21,10 @@ var app = app || {};
       } */
     },
 
+    initialize: function() {
+      this.populate();
+    },
+
     populate: function() {
       $.ajax({
         url: "http://rosemary.umw.edu/~dlederle/cpsc448/feedReader/sweetproxy.php?url=" +
